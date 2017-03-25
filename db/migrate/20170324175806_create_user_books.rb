@@ -3,7 +3,8 @@ class CreateUserBooks < ActiveRecord::Migration[5.0]
     create_table :user_books do |t|
       t.integer :user_id
       t.integer :book_id
-      t.datetime :due_date
+      t.string :due_date
+      t.boolean :returned
     end
   end
 end
